@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application
+  labels:
+    name: application
+spec:
+  replicas: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 3
+      maxUnavailable: 3
+  selector:
+    matchLabels:
+       app: application
+  template:
+   metadata:
+    labels:
+     app: application
+   spec:
+     containers:
+     - name: application
+       ports:
+       - containerPort: 3000
+       image: 986304663873.dkr.ecr.us-east-2.amazonaws.com/nodejs-test:latest 
+     imagePullSecrets:
+     - name: us-east-2-ecr-registry
+     priorityClassName: system-cluster-critical

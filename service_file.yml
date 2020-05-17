@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: appsvc
+  labels:
+    app: application
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 3000
+      nodePort: 30007
+      protocol: TCP
+  selector:
+    app: application
+
