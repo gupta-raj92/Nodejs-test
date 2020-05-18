@@ -13,6 +13,12 @@ http://nginx-lb-266136591.us-east-2.elb.amazonaws.com:3000/
 ===================================
 
 
-deployment.yml ----> Creates a deployment
+deployment.yml ----> Creates a deployment names "application" with 10 replicas,makes sure at least 7 pods are running at any given time during the change in deployment.
+
+service.yml    ----> Creates a sercvice which exposes the container pod to  NodePort.
+
+
+
+
 
 
