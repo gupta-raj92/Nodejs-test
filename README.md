@@ -2,14 +2,11 @@
 
 For accessing the image: 
 
-#aws configure using key ID and secrect key from the file AWS configure credentials
+#aws configure with provided access key id and secret ket  and then run secret.sh key for generating ImagePullSecret/
 
 ***nodejs-test:latest image hosted at AWS ECR, below is the URI:
 
 986304663873.dkr.ecr.us-east-2.amazonaws.com/nodejs-test:latest
-
-
-For generating the secret key for accessing/pulling the ECR image, run serect.sh script.
 
 Load Balancer IP:
 
