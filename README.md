@@ -2,7 +2,7 @@
 
 For accessing the image: 
 
-#aws configure using key ID and secrect key from the file AWS Configure
+#aws configure using key ID and secrect key from the file AWS configure credentials
 
 ***nodejs-test:latest image hosted at AWS ECR, below is the URI:
 
