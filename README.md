@@ -2,11 +2,7 @@
 
 For accessing the image: 
 
-#aws configure using below :
-
-User name	: imagepuller		
-AccessKeyID: AKIA6LJCW2FA65WOY4BG
-Secret access key: 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
+#aws configure using key ID and secrect key from the file AWS Configure
 
 ***nodejs-test:latest image hosted at AWS ECR, below is the URI:
 
