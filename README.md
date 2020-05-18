@@ -1,8 +1,17 @@
 # Nodejs-test
 
-nodejs-test:latest image hosted at AWS ECR, below is the URI:
+For accessing the image: 
+
+#aws configure using below :
+
+User name	: imagepuller		
+AccessKeyID: AKIA6LJCW2FA65WOY4BG
+Secret access key: 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
+
+***nodejs-test:latest image hosted at AWS ECR, below is the URI:
 
 986304663873.dkr.ecr.us-east-2.amazonaws.com/nodejs-test:latest
+
 
 For generating the secret key for accessing/pulling the ECR image, run serect.sh script.
 
@@ -17,6 +26,7 @@ deployment.yml ----> Creates a deployment names "application" with 10 replicas,m
 
 service.yml    ----> Creates a sercvice which exposes the container pod to  NodePort.
 
+horizontalPodsAutoscaler.yml	---> Creates a hpa which scales up the deployment whenever CPU and Memory utilizations go beyond the defined limits.
 
 
 
